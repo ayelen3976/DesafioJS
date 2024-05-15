@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+nav{
+font-size: 20px;
+}
+
+#content {
+    text-align:center;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar las imágenes horizontalmente */
+}
+
+.image {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra para el efecto de flotación */
+    transition: transform 0.3s ease-in-out; /* Agregar transición suave */
+    margin-bottom: 20px; /* Espacio entre imágenes */
+    transform-style: preserve-3d; /* Mantener la perspectiva 3D */
+}
+
+.image:hover {
+    transform: translateY(-5px) rotateX(8deg); /* Desplazar ligeramente hacia arriba y rotar en el eje X al pasar el mouse */
+}
+
+.image img {
+    max-width: 80%; /* Ajustar la imagen al contenedor */
+    height: 80vh auto; /* Mantener la proporción de la imagen */
+}
